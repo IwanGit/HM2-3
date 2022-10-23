@@ -1,3 +1,30 @@
+/* reset */
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+ul,ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+img{
+    display: block;
+}
+
+button{
+    cursor: pointer;
+}
+
+/* reset-end */
+
 body{
     font-family: 'Roboto';
     font-style: normal;
@@ -16,18 +43,13 @@ span{
     color:var(--gray);
 }
 
-ul,ol{
-list-style: none;
-}
-
-a{
-    text-decoration: none;
-}
-
 /*header-section*/
 
 .container{
-    padding: 0px 100px;
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .header-container{
