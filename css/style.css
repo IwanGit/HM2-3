@@ -353,6 +353,11 @@ letter-spacing: 0.03em;
     color: #FFFFFF;
 }
 
+.footer-logo {
+    padding-top: 60px;
+    padding-left: 15px;
+}
+
 /*portfolio*/
 
 /*buttons section*/
