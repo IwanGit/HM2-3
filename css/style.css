@@ -26,13 +26,14 @@ button{
 /* reset-end */
 
 body{
-    font-family: 'Roboto';
-    font-style: normal;
+    font-family: 'Roboto', sans-serif;
 }
 :root{
     --blue:#2196F3;
     --gray: #757575;
     --black: #212121;
+    --def-black: #000000;
+    --white: #FFFFFF;
 }
 
 p{
@@ -63,7 +64,7 @@ span{
 
 /*navigation section*/
 .logo-link{
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
@@ -75,16 +76,16 @@ span{
 }
 
 .logo-dark-link{
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    color: #000000;
+    color: var(--def-black);
 }
 
 .logo-light-link{
-    color:#FFFFFF;
+    color:var(--white);
 }
 
 .navigation-list{
@@ -131,7 +132,8 @@ span{
     color: var(--gray);
 }
 
-.contacts:hover{
+.contacts:hover,
+.contacts:focus{
     color:var(--blue);
 }
 
@@ -142,12 +144,7 @@ span{
 
 .contacts-item:first-child{
     margin-right: 50px;
-}
-
-.mail-link{
-    text-decoration: underline;
-    
-}
+} 
 
 /*main*/
 
@@ -163,7 +160,7 @@ span{
     text-align: center;
     letter-spacing: 0.06em;          
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--white);
 
         padding-top: 200px;
         padding-left: 450px;
@@ -172,6 +169,7 @@ span{
 }
 
 .hero-btn{
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.8;
@@ -181,16 +179,19 @@ span{
     letter-spacing: 0.06em;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
+        border: 0px;
     
-    color: #000000;
+    color: var(--white);
+    background-color: var(--blue);
     margin: auto;
     
     
 }
 
-.hero-btn:hover{
+.hero-btn:hover,
+.hero-btn:focus{
     background-color:var(--blue);
-    color: #FFFFFF;
+    color: var(--white);
 }
 
 /*why we section*/
@@ -319,7 +320,7 @@ span{
 }
 
 .team-card{
-    background: #FFFFFF;
+    background: var(--white);
         /* material shadow v1 */
     
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -346,11 +347,7 @@ letter-spacing: 0.03em;
 /*footer*/
 
 .footer-addr{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
+   font-style: normal;
 }
 
 .footer-logo {
@@ -367,7 +364,7 @@ letter-spacing: 0.03em;
     line-height: 1.6;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color:var(--white);
 }
 
 .btn:hover{
@@ -376,13 +373,13 @@ letter-spacing: 0.03em;
 
 /*footer section*/
 
-.section-footer-one{
+.footer-one{
     background: #2F303A;
     height: 250px;
 }
 
 .footer-list{
-    padding-top: 60px;
+    
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -419,7 +416,7 @@ letter-spacing: 0.03em;
 }
 
 .btns {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -429,7 +426,7 @@ letter-spacing: 0.03em;
     text-align: center;
     letter-spacing: 0.03em;
 
-    color: #212121;
+    color: var(--black);
 
     background: #F5F4FA;
     border-radius: 4px;
@@ -437,17 +434,15 @@ letter-spacing: 0.03em;
 
 .btns:hover {
     background-color: var(--blue);
-    color: #FFFFFF;
+    color: var(--white);
 }
 
 /*projects section*/
 
-.projects-section{
-    padding-bottom: 94px;
 
-}
 
 .projects-list{
+    padding-top: 94px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -464,7 +459,7 @@ letter-spacing: 0.03em;
 }
 
 .projects-card{
-    background: #FFFFFF;
+    background: var(--white);
         border: 1px solid #EEEEEE;
         display: inline-block;
         align-items: center;
